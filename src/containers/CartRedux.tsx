@@ -3,9 +3,9 @@ import { useDispatch, useSelector, TypedUseSelectorHook } from "react-redux";
 import { counterSlice } from "@stores/redux";
 
 import type { Cart as CartTypes } from "@types";
-import type { RootState } from "@stores/redux";
+import type { CartRootState } from "@stores/redux";
 
-const useCartsSelector: TypedUseSelectorHook<RootState> = useSelector;
+const useCartsSelector: TypedUseSelectorHook<CartRootState> = useSelector;
 
 export function CartRedux() {
   const carts = useCartsSelector((state) => state.productCarts.carts);

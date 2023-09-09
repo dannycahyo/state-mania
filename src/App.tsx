@@ -1,9 +1,16 @@
 import { CartRedux } from "@containers/CartRedux";
+import { PostRedux } from "@containers/PostRedux";
+
+import "@styles/app.css";
 
 function App() {
   return (
     <>
-      <CartRedux />
+      <h2>Redux Section:</h2>
+      <div className="container">
+        <CartRedux />
+        <PostRedux />
+      </div>
     </>
   );
 }
