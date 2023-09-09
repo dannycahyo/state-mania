@@ -1,7 +1,9 @@
+import { CartRedux } from "@containers/CartRedux";
+
 function App() {
   return (
     <>
-      <h1>React Vite App Page</h1>
+      <CartRedux />
     </>
   );
 }
