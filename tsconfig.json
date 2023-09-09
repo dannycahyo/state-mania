@@ -25,6 +25,7 @@
       "@components/*": ["./src/components/*"],
       "@containers/*": ["./src/containers/*"],
       "@types": ["./src/types"],
+      "@styles": ["./src/styles"]
     }
   },
   "include": ["src"],
