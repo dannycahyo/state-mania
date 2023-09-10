@@ -2,6 +2,8 @@ import { CartRedux } from "@containers/CartRedux";
 import { CartZustand } from "@containers/CartZustand";
 import { PostRedux } from "@containers/PostRedux";
 import { PostZustand } from "@containers/PostZustand";
+import { CartJotai } from "@containers/CartJotai";
+import { PostJotai } from "@containers/PostJotai";
 
 import "@styles/app.css";
 
@@ -20,6 +22,13 @@ function App() {
         <div className="container">
           <CartZustand />
           <PostZustand />
+        </div>
+      </div>
+      <div>
+        <h2>Jotai Section:</h2>
+        <div className="container">
+          <CartJotai />
+          <PostJotai />
         </div>
       </div>
     </div>
