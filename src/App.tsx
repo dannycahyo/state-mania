@@ -4,6 +4,8 @@ import { PostRedux } from "@containers/PostRedux";
 import { PostZustand } from "@containers/PostZustand";
 import { CartJotai } from "@containers/CartJotai";
 import { PostJotai } from "@containers/PostJotai";
+import { CartRecoil } from "@containers/CartRecoil";
+import { PostRecoil } from "@containers/PostRecoil";
 
 import "@styles/app.css";
 
@@ -29,6 +31,13 @@ function App() {
         <div className="container">
           <CartJotai />
           <PostJotai />
+        </div>
+      </div>
+      <div>
+        <h2>Recoil Section:</h2>
+        <div className="container">
+          <CartRecoil />
+          <PostRecoil />
         </div>
       </div>
     </div>

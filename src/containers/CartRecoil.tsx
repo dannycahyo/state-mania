@@ -1,10 +1,12 @@
-import { useAtom } from "jotai";
+import { useRecoilState } from "recoil";
 import { Cart } from "@components/Cart";
-import { cartAtom } from "@stores/jotai";
+import { cartState } from "@stores/recoil";
+
 import type { Cart as CartType } from "@types";
 
-export function CartJotai() {
-  const [carts, setCarts] = useAtom(cartAtom);
+export function CartRecoil() {
+  const [carts, setCarts] = useRecoilState(cartState);
+
   const addProductToCart = (cart: CartType) => {
     setCarts((prev) => [...prev, cart]);
   };
