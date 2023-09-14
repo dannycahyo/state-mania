@@ -5,13 +5,16 @@ import "./index.css";
 
 import { ReduxProvider } from "@stores/redux";
 import { RecoilRoot } from "recoil";
+import { ContextProvider } from "@stores/context";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ReduxProvider>
-      <RecoilRoot>
-        <App />
-      </RecoilRoot>
-    </ReduxProvider>
+    <ContextProvider>
+      <ReduxProvider>
+        <RecoilRoot>
+          <App />
+        </RecoilRoot>
+      </ReduxProvider>
+    </ContextProvider>
   </React.StrictMode>,
 );
