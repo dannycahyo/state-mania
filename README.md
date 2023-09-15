@@ -10,7 +10,6 @@ State Mania is a React application that explores and compares various state mana
   - Recoil
   - Zustand
 - Profiling with React Profiler
-- Develop custom state management using Context and Reducer
 
 ## Getting Started
 
